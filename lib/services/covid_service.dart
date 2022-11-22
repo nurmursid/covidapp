@@ -5,7 +5,7 @@ import 'package:http/http.dart' as http;
 import 'package:covidapp/models/country_model.dart';
 
 class CovidService {
-  String baseUrl = 'https://disease.sh/v3/covid-19/countries';
+  String baseUrl = 'https://covid-api.mmediagroup.fr/v1/cases';
 
   Future<Covid> getCovid(String country) async {
     var url = Uri.parse(baseUrl);
