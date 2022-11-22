@@ -24,6 +24,11 @@
             "id":5,
             "name":"Philippines",
             "flag":"ph"
+        },
+        {
+            "id":6,
+            "name":"Vietnam",
+            "flag":"vn"
         }
     ]
 
