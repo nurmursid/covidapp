@@ -1,3 +1,5 @@
+import 'package:covidapp/pages/covid_information.dart';
+import 'package:covidapp/pages/my_profile.dart';
 import 'package:flutter/material.dart';
 
 class AboutPage extends StatelessWidget {
@@ -6,42 +8,82 @@ class AboutPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Column(
+        backgroundColor: Color.fromARGB(255, 255, 255, 255),
+        body: Column(
           children: [
-            Icon(
-              Icons.coronavirus,
-              size: 100,
-              color: Colors.red,
-            ),
-            Text(
-              "Covid App",
-              style: TextStyle(
-                fontWeight: FontWeight.bold,
-                fontSize: 36,
+            InkWell(
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => CovidInformation()));
+              },
+              child: Container(
+                alignment: Alignment(0.0, 0.0),
+                width: 500,
+                height: 150,
+                margin: EdgeInsets.all(10),
+                padding: EdgeInsets.all(5),
+                child: Column(children: [
+                  Image.asset(
+                    "assets/images/information.png",
+                    height: 100,
+                    width: 100,
+                    fit: BoxFit.contain,
+                  ),
+                  Text(
+                    "Covid Information",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontFamily: "Roboto",
+                      fontSize: 16.0,
+                    ),
+                  )
+                ]),
+                decoration: BoxDecoration(
+                    color: Color.fromARGB(255, 235, 234, 219),
+                    border: Border.all(
+                      color: Color.fromARGB(255, 159, 117, 38),
+                      width: 5,
+                    )),
               ),
             ),
-            SizedBox(
-              height: 8,
-            ),
-            Text("v1.0.0"),
-            SizedBox(
-              height: 16,
-            ),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 40),
-              child: Card(
-                color: Colors.indigo[200],
-                child: Padding(
-                  padding: const EdgeInsets.all(12),
-                  child: Text(
-                      "This app for you to know how many person get diseased by Corona Virus in several countries. To help you beware and to be reminder to keep your body healthy and safe. Stay Safe everyone!"),
-                ),
+            InkWell(
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => MyProfile()));
+              },
+              child: Container(
+                alignment: Alignment(0.0, 0.0),
+                width: 500,
+                height: 150,
+                margin: EdgeInsets.all(10),
+                padding: EdgeInsets.all(5),
+                child: Column(children: [
+                  Image.asset(
+                    "assets/images/man.png",
+                    height: 100,
+                    width: 100,
+                    fit: BoxFit.contain,
+                  ),
+                  Text(
+                    "My Profile",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontFamily: "Roboto",
+                      fontSize: 16.0,
+                    ),
+                  )
+                ]),
+                decoration: BoxDecoration(
+                    color: Color.fromARGB(255, 235, 234, 219),
+                    border: Border.all(
+                      color: Color.fromARGB(255, 159, 117, 38),
+                      width: 5,
+                    )),
               ),
             ),
           ],
-        ),
-      ),
-    );
+        ));
   }
 }
