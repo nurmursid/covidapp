@@ -5,7 +5,7 @@ import 'package:covidapp/models/country_model.dart';
 
 class CountryService {
   String baseUrl =
-      'https://my-json-server.typicode.com/cinkasihaloho/tugasakhirmdp_covidapp/country';
+      'https://my-json-server.typicode.com/nurmursid/provinsi/country';
 
   Future<List<Country>> getCountry() async {
     var url = Uri.parse(baseUrl);
