@@ -5,7 +5,7 @@ import 'package:http/http.dart' as http;
 import 'package:covidapp/models/country_model.dart';
 
 class ConfirmedService {
-  String baseUrl = 'http://192.168.1.9:3000/count';
+  String baseUrl = 'https://my-json-server.typicode.com/nurmursid/covidapp/db';
 
   Future<Confirmed> getConfirmed(String country) async {
     var url = Uri.parse(baseUrl);

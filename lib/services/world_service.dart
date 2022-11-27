@@ -4,7 +4,7 @@ import 'package:http/http.dart' as http;
 import 'package:covidapp/models/world_model.dart';
 
 class WorldService {
-  String baseUrl = 'http://192.168.1.9:3000/total_data';
+  String baseUrl = 'https://my-json-server.typicode.com/nurmursid/covidapp/db';
 
   Future<List<World>> getWorld() async {
     var url = Uri.parse(baseUrl);
