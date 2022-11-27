@@ -45,15 +45,15 @@ class _HomePageState extends State<HomePage> {
       onItemSelected: (index) => setState(() => _currentIndex = index),
       items: <BottomNavyBarItem>[
         BottomNavyBarItem(
-          icon: const Icon(Icons.coronavirus),
-          title: const Text('Live'),
+          icon: const Icon(Icons.home),
+          title: const Text('Home'),
           activeColor: Colors.white,
           inactiveColor: _inactiveColor,
           textAlign: TextAlign.center,
         ),
         BottomNavyBarItem(
           icon: const Icon(Icons.coronavirus_outlined),
-          title: const Text('History'),
+          title: const Text('Country'),
           activeColor: Colors.white,
           inactiveColor: _inactiveColor,
           textAlign: TextAlign.center,

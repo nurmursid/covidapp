@@ -21,7 +21,7 @@ class LivePage extends StatelessWidget {
           children: [
             Center(
                 child: Text(
-              "Live Data Covid",
+              "Data Covid-19 Indonesia",
               style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
             )),
             FutureBuilder<List<Country>>(

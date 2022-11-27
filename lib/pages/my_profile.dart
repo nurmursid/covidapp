@@ -12,6 +12,10 @@ class MyProfile extends StatelessWidget {
       body: Center(
         child: Column(
           children: [
+            Padding(
+              padding:
+                  const EdgeInsets.symmetric(vertical: 10.0, horizontal: 5.0),
+            ),
             CircleAvatar(
               radius: 56,
               backgroundImage: AssetImage('assets/images/iqbal_removebg.png'),
@@ -43,7 +47,8 @@ class MyProfile extends StatelessWidget {
                 child: Padding(
                   padding: const EdgeInsets.all(12),
                   child: Text(
-                      "Halo guys! Selamat datang di aplikasi Covid-19 Live Data saya. Terima kasih sudah berkunjung semoga sehat selalu!"),
+                      "Halo guys! Selamat datang di aplikasi Covid-19 Live Data saya. Terima kasih sudah berkunjung semoga sehat selalu!",
+                      textAlign: TextAlign.justify),
                 ),
               ),
             ),

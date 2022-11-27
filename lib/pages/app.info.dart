@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class CovidInformation extends StatelessWidget {
-  const CovidInformation({Key? key}) : super(key: key);
+class AppInfo extends StatelessWidget {
+  const AppInfo({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Covid Information'),
+        title: Text('Tentang Aplikasi'),
       ),
       body: Center(
         child: Column(
@@ -16,18 +16,25 @@ class CovidInformation extends StatelessWidget {
               padding:
                   const EdgeInsets.symmetric(vertical: 10.0, horizontal: 5.0),
             ),
-            Icon(
-              Icons.coronavirus,
-              size: 100,
-              color: Colors.red,
+            Image.asset(
+              "assets/images/covid.png",
+              height: 100,
+              width: 100,
+              colorBlendMode: BlendMode.darken,
+              fit: BoxFit.fitWidth,
             ),
-            SizedBox(
-              height: 8,
-            ),
-            Text("Apa itu Covid-19",
+            Text("Covid App",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 30,
+                )),
+            SizedBox(
+              height: 8,
+            ),
+            Text("v.1.0",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 16,
                 )),
             SizedBox(
               height: 16,
@@ -35,16 +42,15 @@ class CovidInformation extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 40),
               child: Card(
-                color: Colors.indigo[200],
+                color: Color.fromARGB(255, 255, 255, 255),
                 child: Padding(
                   padding: const EdgeInsets.all(12),
                   child: Text(
-                    "Corona Virus Disease 2019 atau yang biasa disingkat COVID-19 adalah penyakit menular yang disebabkan oleh SARS-CoV-2, salah satu jenis koronavirus. Penderita COVID-19 dapat mengalami demam, batuk kering, dan kesulitan bernafas.",
-                    textAlign: TextAlign.justify,
-                  ),
+                      "Aplikasi ini berisi data covid-19 dari 6 negara, yaitu Indonesia, Malaysia, Thailand, Singapora, Filipina, dan Vietnam",
+                      textAlign: TextAlign.justify),
                 ),
               ),
-            ),
+            )
           ],
         ),
       ),

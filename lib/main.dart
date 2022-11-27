@@ -1,5 +1,6 @@
 import 'package:covidapp/providers/covid_provider.dart';
 import 'package:covidapp/providers/history_confirm_provider.dart';
+import 'package:covidapp/providers/world_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:covidapp/pages/home_page.dart';
 import 'package:provider/provider.dart';
@@ -25,6 +26,9 @@ class MyApp extends StatelessWidget {
         ),
         ChangeNotifierProvider(
           create: (context) => ConfirmedProvider(),
+        ),
+        ChangeNotifierProvider(
+          create: (context) => WorldProvider(),
         ),
       ],
       child: MaterialApp(

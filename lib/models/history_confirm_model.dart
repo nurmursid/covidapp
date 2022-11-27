@@ -27,6 +27,5 @@ class Confirmed {
 
   Map<String, dynamic> toJson() => {
         "country": country,
-        "dates": Map.from(dates).map((k, v) => MapEntry<String, dynamic>(k, v)),
       };
 }

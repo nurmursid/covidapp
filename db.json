@@ -30,7 +30,133 @@
             "name":"Vietnam",
             "flag":"vn"
         }
-    ]
+    ],
 
-    
+    "total_data":[
+        {
+            "TotalConfirmed": 577256332,
+            "TotalDeaths": 1293061,
+            "TotalRecovered": 342840923
+          }
+
+    ],
+
+    "count":[
+        {
+            "id":1,
+            "name":"Indonesia",
+            "flag":"id",
+            "chart" : [
+                {
+                    "date" : 2020,
+                    "cases" : 52258
+                },
+                {
+                    "date" : 2021,
+                    "cases" : 422567
+                },
+                {
+                    "date" : 2022,
+                    "cases" : 664609
+                }
+            ]
+        },
+        {
+            "id":2,
+            "name":"Malaysia",
+            "flag":"my",
+            "chart" : [
+                {
+                    "date" : 2020,
+                    "cases" : 6186
+                },
+                {
+                    "date" : 2021,
+                    "cases" : 261957
+                },
+                {
+                    "date" : 2022,
+                    "cases" : 498427
+                }
+            ]
+        },
+        {
+            "id":3,
+            "name":"Thailand",
+            "flag":"th",
+            "chart" : [
+                {
+                    "date" : 2020,
+                    "cases" : 3961
+                },
+                {
+                    "date" : 2021,
+                    "cases" : 210095
+                },
+                {
+                    "date" : 2022,
+                    "cases" : 470233
+                }
+            ]
+        },
+        {
+            "id":4,
+            "name":"Singapore",
+            "flag":"sg",
+            "chart" : [
+                {
+                    "date" : 2020,
+                    "cases" : 58190
+                },
+                {
+                    "date" : 2021,
+                    "cases" : 261636
+                },
+                {
+                    "date" : 2022,
+                    "cases" : 632122
+                }
+            ]
+        },
+        {
+            "id":5,
+            "name":"Philippines",
+            "flag":"ph",
+            "chart" : [
+                {
+                    "date" : 2020,
+                    "cases" : 4225
+                },
+                {
+                    "date" : 2021,
+                    "cases" : 283237
+                },
+                {
+                    "date" : 2022,
+                    "cases" : 402940
+                }
+            ]
+        },
+        {
+            "id":6,
+            "name":"Vietnam",
+            "flag":"vn",
+            "chart" : [
+                {
+                    "date" : 2020,
+                    "cases" : 4225
+                },
+                {
+                    "date" : 2021,
+                    "cases" : 12103
+                },
+                {
+                    "date" : 2022,
+                    "cases" : 115141
+                }
+            ]
+        }
+        
+
+    ]
 }

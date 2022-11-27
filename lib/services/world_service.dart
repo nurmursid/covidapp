@@ -1,26 +1,26 @@
 import 'dart:convert';
 
 import 'package:http/http.dart' as http;
-import 'package:covidapp/models/country_model.dart';
+import 'package:covidapp/models/world_model.dart';
 
-class CountryService {
-  String baseUrl = 'https://my-json-server.typicode.com/nurmursid/covidapp';
+class WorldService {
+  String baseUrl = 'http://192.168.1.9:3000/total_data';
 
-  Future<List<Country>> getCountry() async {
+  Future<List<World>> getWorld() async {
     var url = Uri.parse(baseUrl);
     var headers = {'Content-Type': 'application/json'};
     var response = await http.get(url, headers: headers);
 
     if (response.statusCode == 200) {
       List data = jsonDecode(response.body);
-      List<Country> countries = [];
+      List<World> world = [];
       for (var item in data) {
-        countries.add(Country.fromJson(item));
+        world.add(World.fromJson(item));
       }
 
-      return countries;
+      return world;
     } else {
-      throw Exception('Failed getting countries');
+      throw Exception('Failed getting world');
     }
   }
 }

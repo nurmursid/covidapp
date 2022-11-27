@@ -20,7 +20,7 @@ class HistoryPage extends StatelessWidget {
         child: Column(
           children: [
             Center(
-                child: Text("History Data Covid",
+                child: Text("Country Data Covid",
                     style:
                         TextStyle(fontSize: 24, fontWeight: FontWeight.bold))),
             FutureBuilder<List<Country>>(
@@ -38,8 +38,8 @@ class HistoryPage extends StatelessWidget {
                   } else {
                     return Column(
                       children: snapshot.data!
-                          .map((country) =>
-                              countryCard(context, country.flag, country.name))
+                          .map((country) => countryCard(context, country.flag,
+                              country.name, country.chart))
                           .toList(),
                     );
                   } // snapshot.data  :- get your object which is pass from your downloadData() function
@@ -52,7 +52,8 @@ class HistoryPage extends StatelessWidget {
     );
   }
 
-  Card countryCard(BuildContext context, String flag, String name) {
+  Card countryCard(
+      BuildContext context, String flag, String name, List<Chart> chart) {
     return Card(
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
       color: Colors.indigo[100],
@@ -65,6 +66,7 @@ class HistoryPage extends StatelessWidget {
                 builder: (context) => HistoryDetailPage(
                       country: name,
                       flag: flag,
+                      chart: chart,
                     )),
           );
         },
