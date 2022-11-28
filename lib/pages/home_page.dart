@@ -1,4 +1,5 @@
 import 'package:covidapp/pages/history_page.dart';
+import 'package:covidapp/pages/id_data_page.dart';
 import 'package:covidapp/pages/live_page.dart';
 import 'package:covidapp/widgets/custom_animated_bottom_bar.dart';
 import 'package:flutter/material.dart';
@@ -59,8 +60,8 @@ class _HomePageState extends State<HomePage> {
           textAlign: TextAlign.center,
         ),
         BottomNavyBarItem(
-          icon: const Icon(Icons.info),
-          title: const Text('About'),
+          icon: const Icon(Icons.clear_all_outlined),
+          title: const Text('Others'),
           activeColor: Colors.white,
           inactiveColor: _inactiveColor,
           textAlign: TextAlign.center,
@@ -71,7 +72,7 @@ class _HomePageState extends State<HomePage> {
 
   Widget getBody() {
     List<Widget> pages = [
-      const LivePage(),
+      const IdData(),
       const HistoryPage(),
       const AboutPage(),
     ];

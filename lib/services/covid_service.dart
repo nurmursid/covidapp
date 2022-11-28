@@ -5,7 +5,8 @@ import 'package:http/http.dart' as http;
 import 'package:covidapp/models/country_model.dart';
 
 class CovidService {
-  String baseUrl = 'https://my-json-server.typicode.com/nurmursid/covidapp/db';
+  String baseUrl =
+      'https://my-json-server.typicode.com/nurmursid/covidapp/country';
 
   Future<Covid> getCovid(String country) async {
     var url = Uri.parse(baseUrl);

@@ -32,14 +32,7 @@
         }
     ],
 
-    "total_data":[
-        {
-            "TotalConfirmed": 577256332,
-            "TotalDeaths": 1293061,
-            "TotalRecovered": 342840923
-          }
-
-    ],
+    
 
     "count":[
         {
@@ -157,6 +150,14 @@
             ]
         }
         
+
+    ],
+    "total_data":[
+        {
+            "TotalConfirmed": 577256332,
+            "TotalDeaths": 1293061,
+            "TotalRecovered": 342840923
+          }
 
     ]
 }

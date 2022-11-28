@@ -46,7 +46,7 @@ class AppInfo extends StatelessWidget {
                 child: Padding(
                   padding: const EdgeInsets.all(12),
                   child: Text(
-                      "Aplikasi ini berisi data covid-19 dari 6 negara, yaitu Indonesia, Malaysia, Thailand, Singapora, Filipina, dan Vietnam",
+                      "Aplikasi ini berisi confirmed data covid-19 dari 6 negara, yaitu Indonesia, Malaysia, Thailand, Singapora, Filipina, dan Vietnam.",
                       textAlign: TextAlign.justify),
                 ),
               ),
